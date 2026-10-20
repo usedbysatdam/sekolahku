@@ -1,7 +1,7 @@
 {
   "name": "SekolahKu — Sistem Manajemen Sekolah",
   "short_name": "SekolahKu",
-  "description": "Kelola presensi, piket, dan laporan fasilitas sekolah",
+  "description": "Kelola pembelajaran dan aktivitas sekolah",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffd21f",

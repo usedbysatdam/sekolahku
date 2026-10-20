@@ -1,0 +1,2229 @@
+/* EC Games — auto-scoped ke #ecgames-root agar tidak bentrok dengan gaya SPA Educrazy.
+   Sumber: zep-game/style.css (jangan diedit manual di sini). */
+#ecgames-root {
+  font-family: "Plus Jakarta Sans", Inter, system-ui, sans-serif;
+  color: var(--color-ink);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--color-bg);
+  background-image: radial-gradient(
+    rgba(120, 160, 120, 0.14) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 26px 26px;
+}
+#ecgames-root * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#ecgames-root {
+  --color-bg: #f3f7ef;
+  --color-surface: #ffffff;
+  --color-surface-muted: #edf3e9;
+  --color-ink: #26312a;
+  --color-muted: #6d7a71;
+
+  --color-yellow: #ffd629;
+  --color-pink: #ff5d8f;
+  --color-green: #3fca5b;
+  --color-teal: #3fc9bd;
+  --color-purple: #8a63f6;
+  --color-blue: #3d97f0;
+  --color-coral: #ff7569;
+
+  --color-success: #159a70;
+  --color-warning: #e9ad24;
+  --color-danger: #ee5560;
+  --color-focus: #1769d2;
+
+  --line: rgba(38, 49, 42, 0.09);
+  --line-strong: rgba(38, 49, 42, 0.14);
+  --border-width: 1px;
+  --border-strong: 1.5px solid var(--line);
+  --shadow-hard: 0 8px 20px rgba(35, 55, 40, 0.14);
+  --shadow-hard-sm: 0 3px 8px rgba(35, 55, 40, 0.12);
+  --shadow-hard-lg: 0 18px 40px rgba(35, 55, 40, 0.2);
+
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-pill: 999px;
+}
+#ecgames-root,
+#ecgames-root {
+  height: 100%;
+}
+#ecgames-root {
+  font-family: "Plus Jakarta Sans", Inter, system-ui, sans-serif;
+  color: var(--color-ink);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-bg);
+  background-image: radial-gradient(
+    rgba(120, 160, 120, 0.14) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 26px 26px;
+}
+#ecgames-root #app {
+  width: 100%;
+  max-width: 1020px;
+  padding: 16px;
+}
+#ecgames-root .screen {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+#ecgames-root .hidden {
+  display: none !important;
+}
+#ecgames-root .ec-hero {
+  text-align: center;
+}
+#ecgames-root .ec-badge {
+  display: inline-block;
+  background: var(--color-ink);
+  color: #fff;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-hard-sm);
+  margin-bottom: 10px;
+}
+#ecgames-root .ec-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+}
+#ecgames-root .ec-title span {
+  background: var(--color-yellow);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(233, 173, 36, 0.4);
+  padding: 2px 14px;
+  display: inline-block;
+  transform: rotate(-2deg);
+}
+#ecgames-root .ec-tag {
+  font-weight: 600;
+  color: var(--color-muted);
+  margin-top: 10px;
+}
+#ecgames-root .lobby-card,
+#ecgames-root .room-card {
+  background: var(--color-surface);
+  border: var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hard);
+  padding: 24px;
+  width: 100%;
+  max-width: 540px;
+}
+#ecgames-root .logo {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+}
+#ecgames-root .logo.small {
+  font-size: 18px;
+}
+#ecgames-root .logo .logo-tag {
+  background: var(--color-yellow);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(233, 173, 36, 0.35);
+  padding: 2px 10px;
+  display: inline-block;
+  transform: rotate(-2deg);
+}
+#ecgames-root .subtitle {
+  color: var(--color-muted);
+  margin: 6px 0 14px;
+  font-size: 14px;
+  font-weight: 500;
+}
+#ecgames-root .field {
+  display: block;
+  margin: 12px 0;
+}
+#ecgames-root .field > span {
+  display: block;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+#ecgames-root .field input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: var(--border-strong);
+  border-radius: 14px;
+  font-size: 16px;
+  font-family: inherit;
+  background: var(--color-surface-muted);
+}
+#ecgames-root .field input:focus {
+  outline: none;
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 3px rgba(23, 105, 210, 0.2);
+}
+#ecgames-root .wardrobe {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  background: var(--color-surface-muted);
+  border: var(--border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-hard-sm);
+  padding: 14px;
+}
+#ecgames-root .look-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+#ecgames-root .look-stage {
+  position: relative;
+  border: var(--border-strong);
+  border-radius: 18px;
+  background: #eaf7ef;
+  box-shadow: var(--shadow-hard-sm);
+  overflow: hidden;
+}
+#ecgames-root .look-stage::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 26px;
+  background: #cfead8;
+  border-top: 1px solid var(--line);
+}
+#ecgames-root #look-preview {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 184px;
+}
+#ecgames-root .look-panel .btn {
+  width: 100%;
+}
+#ecgames-root .look-progress {
+  align-self: center;
+  background: var(--color-yellow);
+  border: none;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 4px 10px rgba(233, 173, 36, 0.35);
+  padding: 5px 13px;
+  font-size: 11.5px;
+  font-weight: 800;
+}
+#ecgames-root .look-progress.all {
+  background: var(--color-green);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(63, 202, 91, 0.35);
+}
+#ecgames-root .look-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+#ecgames-root .look-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 10px;
+}
+#ecgames-root .look-tabs button {
+  display: grid;
+  place-items: center;
+  min-height: 52px;
+  padding: 6px 4px;
+  border: var(--border-strong);
+  border-radius: 12px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-hard-sm);
+  font: inherit;
+  font-size: 10.5px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    background 120ms ease;
+}
+#ecgames-root .look-tabs button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-hard);
+}
+#ecgames-root .look-tabs button.active {
+  background: var(--accent, var(--color-yellow));
+  border-color: transparent;
+  transform: translateY(1px);
+  box-shadow: var(--shadow-hard-sm);
+}
+#ecgames-root .look-tabs button:focus-visible,
+#ecgames-root .chip:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+#ecgames-root .look-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 8px;
+  align-content: start;
+  max-height: 208px;
+  overflow: auto;
+  padding: 2px 4px 2px 2px;
+  scrollbar-width: thin;
+}
+#ecgames-root .chip {
+  grid-column: span 4;
+  position: relative;
+  min-height: 44px;
+  border: var(--border-strong);
+  border-radius: 12px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-hard-sm);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-ink);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4px;
+  overflow-wrap: anywhere;
+  transition:
+    transform 110ms ease,
+    box-shadow 110ms ease;
+  overflow: hidden;
+}
+#ecgames-root .chip:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-hard);
+}
+#ecgames-root .chip.swatch {
+  grid-column: span 3;
+  aspect-ratio: 1;
+  padding: 0;
+}
+#ecgames-root .chip.swatch.sel {
+  box-shadow:
+    var(--shadow-hard-sm),
+    inset 0 0 0 3px #fff;
+}
+#ecgames-root .chip:not(.swatch).sel {
+  background: var(--accent, var(--color-yellow));
+  border-color: transparent;
+  box-shadow:
+    var(--shadow-hard-sm),
+    inset 0 0 0 2px var(--color-ink);
+}
+#ecgames-root .chip .tick {
+  font-size: 23px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+#ecgames-root .chip.locked {
+  background: var(--color-surface-muted) !important;
+  border: 1.5px dashed var(--line-strong);
+  box-shadow: none;
+  color: var(--color-muted);
+  cursor: not-allowed;
+  flex-direction: column;
+  gap: 1px;
+}
+#ecgames-root .chip.locked:hover {
+  transform: none;
+  box-shadow: none;
+}
+#ecgames-root .chip.locked .lock {
+  font-size: 15px;
+  line-height: 1;
+}
+#ecgames-root .chip.locked .chip-name {
+  font-size: 9.5px;
+  font-weight: 700;
+  line-height: 1.05;
+  max-width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 520px) {
+  #ecgames-root .wardrobe {
+    grid-template-columns: 1fr;
+  }
+  #ecgames-root .look-panel {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #ecgames-root .look-stage {
+    flex: 1 1 120px;
+  }
+  #ecgames-root .look-panel .btn {
+    width: auto;
+  }
+  #ecgames-root #look-preview {
+    height: 150px;
+  }
+  #ecgames-root .look-tabs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  #ecgames-root .look-tabs button {
+    min-height: 48px;
+    font-size: 11px;
+  }
+  #ecgames-root .look-grid {
+    max-height: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #ecgames-root *,
+  #ecgames-root *::before,
+  #ecgames-root *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+#ecgames-root .btn {
+  min-height: 44px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 14px;
+  background: var(--color-yellow);
+  color: var(--color-ink);
+  box-shadow: var(--shadow-hard-sm);
+  font: inherit;
+  font-weight: 800;
+  font-size: 15px;
+  cursor: pointer;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    filter 120ms ease;
+}
+#ecgames-root .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-hard);
+  filter: brightness(1.03);
+}
+#ecgames-root .btn:active {
+  transform: translateY(1px);
+  box-shadow: var(--shadow-hard-sm);
+}
+#ecgames-root .btn:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+#ecgames-root .btn.primary {
+  background: var(--color-yellow);
+  color: var(--color-ink);
+}
+#ecgames-root .btn.secondary {
+  background: var(--color-blue);
+  color: #fff;
+}
+#ecgames-root .btn.ghost {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border: var(--border-strong);
+}
+#ecgames-root .btn.big {
+  font-size: 17px;
+  padding: 14px 22px;
+}
+#ecgames-root .btn.small {
+  padding: 8px 12px;
+  font-size: 13px;
+  min-height: 38px;
+}
+#ecgames-root .btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+#ecgames-root .btn-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+#ecgames-root .btn-row .btn {
+  flex: 1;
+}
+#ecgames-root .btn-row.col {
+  flex-direction: column;
+}
+#ecgames-root .join-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+#ecgames-root .join-row input {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  min-height: 48px;
+  padding: 12px;
+  border: var(--border-strong);
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: inherit;
+  background: var(--color-surface-muted);
+}
+#ecgames-root .join-row input:focus {
+  outline: none;
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 3px rgba(23, 105, 210, 0.2);
+}
+#ecgames-root .hint {
+  margin-top: 14px;
+  color: var(--color-muted);
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+#ecgames-root .hint.center {
+  text-align: center;
+}
+#ecgames-root .hint.how {
+  background: var(--color-surface-muted);
+  border: var(--border-strong);
+  border-radius: 14px;
+  padding: 10px 12px;
+  color: var(--color-ink);
+}
+#ecgames-root .err {
+  color: var(--color-danger);
+  font-weight: 700;
+  margin-top: 8px;
+  min-height: 20px;
+}
+#ecgames-root .room-code {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  margin-top: 4px;
+  font-weight: 700;
+}
+#ecgames-root .room-code b {
+  font-size: 22px;
+  letter-spacing: 5px;
+  background: var(--color-yellow);
+  border: none;
+  box-shadow: 0 4px 10px rgba(233, 173, 36, 0.35);
+  padding: 3px 14px;
+  border-radius: 12px;
+}
+#ecgames-root .link-btn {
+  border: var(--border-strong);
+  background: var(--color-surface);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 8px;
+  font-family: inherit;
+}
+#ecgames-root .room-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+#ecgames-root .player-list {
+  list-style: none;
+  margin: 12px 0;
+  max-height: 220px;
+  overflow: auto;
+}
+#ecgames-root .player-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: var(--color-surface-muted);
+  border: var(--border-strong);
+  border-radius: 14px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+#ecgames-root .player-list .hosttag {
+  background: var(--color-yellow);
+  border: none;
+  font-size: 11px;
+  padding: 2px 9px;
+  border-radius: var(--radius-pill);
+  font-weight: 800;
+}
+#ecgames-root .room-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+#ecgames-root .mode-pick {
+  display: flex;
+  gap: 10px;
+}
+#ecgames-root .mode-pick button {
+  flex: 1;
+  min-height: 44px;
+  border: var(--border-strong);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-hard-sm);
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1.5;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    background 120ms ease;
+}
+#ecgames-root .mode-pick button small {
+  font-weight: 600;
+  color: var(--color-muted);
+}
+#ecgames-root .mode-pick button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-hard);
+}
+#ecgames-root .mode-pick button.sel {
+  background: var(--color-yellow);
+  border-color: transparent;
+}
+#ecgames-root .mode-pick button.sel small {
+  color: var(--color-ink);
+}
+#ecgames-root .mode-pick.small button {
+  padding: 8px;
+  font-size: 13px;
+  min-height: 38px;
+}
+#ecgames-root #host-mode-pick {
+  margin-top: 8px;
+}
+#ecgames-root .rules-pick {
+  display: flex;
+  gap: 10px;
+}
+#ecgames-root .rules-pick button {
+  flex: 1;
+  min-height: 44px;
+  border: var(--border-strong);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-hard-sm);
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1.5;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    background 120ms ease;
+}
+#ecgames-root .rules-pick button small {
+  font-weight: 600;
+  color: var(--color-muted);
+}
+#ecgames-root .rules-pick button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-hard);
+}
+#ecgames-root .rules-pick button.sel {
+  background: var(--color-teal);
+  border-color: transparent;
+}
+#ecgames-root .rules-pick button.sel small {
+  color: var(--color-ink);
+}
+#ecgames-root .rules-pick.small button {
+  padding: 8px;
+  font-size: 13px;
+  min-height: 38px;
+}
+#ecgames-root .rules-pick.off {
+  opacity: 0.55;
+}
+#ecgames-root .rules-pick.off button {
+  pointer-events: none;
+  filter: grayscale(0.35);
+}
+#ecgames-root #host-rules-pick {
+  margin-top: 8px;
+}
+#ecgames-root #room-mode-label {
+  margin-top: 2px;
+  font-weight: 800;
+}
+#ecgames-root #screen-game {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+  background: #82c556;
+}
+#ecgames-root #hud {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 8;
+  width: auto;
+  max-width: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 8px;
+  pointer-events: none;
+}
+#ecgames-root #hud .pill,
+#ecgames-root #hud .btn,
+#ecgames-root #hud button {
+  pointer-events: auto;
+}
+#ecgames-root .hud-left {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+#ecgames-root .pill {
+  background: var(--color-surface);
+  border: var(--border-strong);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-hard-sm);
+  padding: 6px 15px;
+  font-size: 14px;
+  font-weight: 800;
+}
+#ecgames-root .pill.timer {
+  background: var(--color-danger);
+  color: #fff;
+  border-color: transparent;
+  min-width: 56px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 900;
+}
+#ecgames-root .pill.timer.low {
+  animation: blink 0.5s steps(2) infinite;
+}
+@keyframes blink {
+  50% {
+    background: #b23a44;
+  }
+}
+#ecgames-root .streak {
+  color: var(--color-danger);
+  font-weight: 900;
+}
+#ecgames-root .hud-right {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+#ecgames-root .q-banner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(92%, 560px);
+  z-index: 5;
+  background: var(--color-surface);
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hard-lg);
+  padding: 20px 22px;
+}
+#ecgames-root .q-banner-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+#ecgames-root .quiz-q {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+#ecgames-root .quiz-status {
+  margin-top: 6px;
+  font-weight: 800;
+  min-height: 20px;
+  text-align: center;
+}
+#ecgames-root .duel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(92%, 440px);
+  z-index: 6;
+  background: var(--color-surface);
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hard-lg);
+  padding: 20px 22px 18px;
+}
+#ecgames-root .duel-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+#ecgames-root #raceq .quiz-q {
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.4;
+  text-align: left;
+}
+#ecgames-root #raceq-close {
+  min-height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  padding: 0;
+}
+#ecgames-root .qtype {
+  background: var(--color-teal);
+  color: #fff;
+  border-color: transparent;
+  font-size: 12px;
+  padding: 4px 13px;
+  margin-right: auto;
+}
+#ecgames-root .qtype[data-type="ox"] {
+  background: var(--color-purple);
+}
+#ecgames-root .qtype[data-type="fill"] {
+  background: var(--color-blue);
+}
+#ecgames-root .duel-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 12px;
+}
+#ecgames-root .duel-opts button {
+  border: var(--border-strong);
+  background: var(--color-surface);
+  border-radius: 14px;
+  box-shadow: var(--shadow-hard-sm);
+  padding: 13px 14px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+  min-height: 46px;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    background 120ms ease;
+}
+#ecgames-root .duel-opts button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-hard);
+}
+#ecgames-root .duel-opts button.picked {
+  background: var(--color-yellow);
+  border-color: transparent;
+}
+#ecgames-root .duel-opts button.right {
+  background: var(--color-green);
+  color: #fff;
+  border-color: transparent;
+}
+#ecgames-root .duel-opts button.wrong {
+  background: var(--color-coral);
+  color: #fff;
+  border-color: transparent;
+}
+#ecgames-root .duel-opts button:disabled {
+  cursor: default;
+}
+#ecgames-root .duel-opts.ox {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#ecgames-root .duel-opts.ox button.ox-o,
+#ecgames-root .duel-opts.ox button.ox-x {
+  flex: 1;
+  min-height: 88px;
+  font-size: 42px;
+}
+#ecgames-root .duel-opts button.ox-o {
+  color: var(--color-success);
+}
+#ecgames-root .duel-opts button.ox-x {
+  color: var(--color-danger);
+}
+#ecgames-root .raceq-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: var(--border-strong);
+  border-radius: 14px;
+  font-size: 16px;
+  font-family: inherit;
+  background: var(--color-surface-muted);
+  margin-top: 12px;
+}
+#ecgames-root .raceq-input:focus {
+  outline: none;
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 3px rgba(23, 105, 210, 0.2);
+}
+#ecgames-root .raceq-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+#ecgames-root .raceq-row .btn {
+  flex: 1;
+}
+#ecgames-root #race-result {
+  position: absolute;
+  left: 50%;
+  top: 16px;
+  transform: translateX(-50%);
+  z-index: 7;
+  background: var(--color-yellow);
+  color: var(--color-ink);
+  border: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-hard);
+  padding: 9px 20px;
+  text-align: center;
+  min-width: 160px;
+}
+#ecgames-root #race-result b {
+  display: block;
+  font-size: 26px;
+  line-height: 1;
+}
+#ecgames-root #race-result span {
+  font-size: 13px;
+  font-weight: 800;
+}
+#ecgames-root .start-count {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  font-size: clamp(64px, 14vw, 120px);
+  font-weight: 900;
+  color: #fff;
+  text-shadow:
+    0 6px 0 rgba(0, 0, 0, 0.18),
+    0 0 22px rgba(0, 0, 0, 0.28);
+  pointer-events: none;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+#ecgames-root .ghost-timer {
+  position: absolute;
+  left: 50%;
+  top: 58px;
+  transform: translateX(-50%);
+  z-index: 8;
+  background: rgba(20, 26, 22, 0.82);
+  color: #fff;
+  border-radius: var(--radius-pill);
+  padding: 8px 20px;
+  font-weight: 800;
+  font-size: 18px;
+  pointer-events: none;
+  box-shadow: var(--shadow-hard);
+  white-space: nowrap;
+}
+#ecgames-root .ghost-timer b {
+  font-size: 24px;
+  color: #ffd76a;
+  margin: 0 1px;
+}
+#ecgames-root #stage-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+}
+#ecgames-root #game {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  touch-action: none;
+  background: #82c556;
+}
+#ecgames-root #joystick {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-hard);
+  z-index: 3;
+}
+#ecgames-root #stick {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: none;
+  box-shadow: var(--shadow-hard-sm);
+}
+#ecgames-root .chat-toggle {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 3;
+  border-radius: 50% !important;
+  width: 48px;
+  height: 48px;
+  min-height: 48px;
+  font-size: 18px;
+  padding: 0;
+}
+#ecgames-root .chat-log {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 46%;
+  pointer-events: none;
+}
+#ecgames-root .chat-msg {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-ink);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-hard-sm);
+  width: fit-content;
+  max-width: 100%;
+}
+#ecgames-root .chat-form {
+  position: absolute;
+  left: 12px;
+  right: 68px;
+  bottom: 12px;
+  z-index: 4;
+  display: flex;
+  gap: 6px;
+}
+#ecgames-root .chat-form input {
+  flex: 1;
+  min-height: 44px;
+  border: var(--border-strong);
+  border-radius: 14px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  background: var(--color-surface);
+}
+#ecgames-root .chat-form input:focus {
+  outline: none;
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 3px rgba(23, 105, 210, 0.2);
+}
+#ecgames-root .panel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-surface);
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hard-lg);
+  padding: 24px;
+  width: min(92%, 480px);
+  z-index: 5;
+}
+#ecgames-root .panel h3 {
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+}
+#ecgames-root #board-list,
+#ecgames-root #podium-list {
+  margin: 0 0 12px 22px;
+  font-weight: 700;
+  line-height: 2;
+}
+#ecgames-root .help-list {
+  margin: 0 0 12px 20px;
+  line-height: 1.9;
+  font-size: 14px;
+}
+#ecgames-root .toast {
+  position: absolute;
+  left: 50%;
+  bottom: 108px;
+  transform: translateX(-50%);
+  background: var(--color-ink);
+  color: #fff;
+  border: none;
+  box-shadow: var(--shadow-hard);
+  padding: 11px 22px;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  z-index: 6;
+  white-space: nowrap;
+  pointer-events: none;
+  max-width: 92%;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  #ecgames-root #app {
+    padding: 16px;
+  }
+  #ecgames-root .lobby-card,
+  #ecgames-root .room-card {
+    padding: 20px;
+  }
+  #ecgames-root .ec-title {
+    font-size: 34px;
+  }
+  #ecgames-root .quiz-q {
+    font-size: 15px;
+  }
+  #ecgames-root #joystick {
+    display: block !important;
+  }
+  #ecgames-root .btn-row {
+    flex-direction: column;
+  }
+  #ecgames-root .btn-row .btn {
+    width: 100%;
+  }
+  #ecgames-root #hud {
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    gap: 5px;
+  }
+  #ecgames-root .hud-left,
+  #ecgames-root .hud-right {
+    gap: 5px;
+  }
+  #ecgames-root .pill {
+    padding: 4px 10px;
+    font-size: 11px;
+    box-shadow: var(--shadow-hard-sm);
+  }
+  #ecgames-root .pill.timer {
+    min-width: 42px;
+    font-size: 13px;
+  }
+  #ecgames-root .hud-left .btn.small,
+  #ecgames-root .hud-right .btn.small {
+    padding: 6px 8px;
+    font-size: 11px;
+    min-height: 32px;
+  }
+  #ecgames-root #btn-solo-start {
+    bottom: 14px;
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+  #ecgames-root .chat-log {
+    bottom: 150px;
+    max-width: 74%;
+  }
+  #ecgames-root .chat-toggle {
+    bottom: 12px;
+    width: 44px;
+    height: 44px;
+    min-height: 44px;
+  }
+  #ecgames-root .chat-form {
+    bottom: 12px;
+    left: 12px;
+    right: 64px;
+  }
+  #ecgames-root .toast {
+    bottom: 88px;
+    font-size: 12px;
+    white-space: normal;
+    line-height: 1.4;
+    padding: 9px 15px;
+  }
+  #ecgames-root #joystick {
+    width: 96px;
+    height: 96px;
+  }
+  #ecgames-root #stick {
+    left: 28px;
+    top: 28px;
+    width: 40px;
+    height: 40px;
+  }
+  #ecgames-root .panel {
+    width: min(94%, 440px);
+    padding: 18px;
+  }
+  #ecgames-root .q-banner,
+  #ecgames-root .duel {
+    width: min(94%, 430px);
+    padding: 16px 18px;
+  }
+  #ecgames-root .duel-opts button {
+    min-height: 44px;
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  #ecgames-root #race-result {
+    min-width: 128px;
+    padding: 6px 14px;
+  }
+  #ecgames-root #race-result b {
+    font-size: 22px;
+  }
+  #ecgames-root .hud-left .pill:nth-child(1) {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #ecgames-root *,
+  #ecgames-root *::before,
+  #ecgames-root *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+#ecgames-root:not(.hidden) {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+#ecgames-root #app {
+  min-height: 100%;
+}
+
+/* ============================================================
+   Lobby v2 — selaras DESIGN.md (neo-brutalism)
+   Token resmi DESIGN.md, border tebal, hard shadow, layout 2 kolom.
+   ============================================================ */
+#ecgames-root {
+  --color-bg: #fff7ed;
+  --color-surface: #fffcf8;
+  --color-surface-muted: #f1eae2;
+  --color-ink: #151515;
+  --color-muted: #68645f;
+  --color-yellow: #ffd629;
+  --color-pink: #ff5d8f;
+  --color-green: #39d353;
+  --color-teal: #43d0c4;
+  --color-purple: #8a63f6;
+  --color-blue: #3998f4;
+  --color-coral: #ff7569;
+  --color-success: #159a70;
+  --color-warning: #e9ad24;
+  --color-danger: #e94b50;
+  --color-focus: #1769d2;
+  --line: rgba(21, 21, 21, 0.14);
+  --line-strong: rgba(21, 21, 21, 0.3);
+  --border-width: 2px;
+  --border-strong: 3px solid var(--color-ink);
+  --shadow-hard: 5px 5px 0 var(--color-ink);
+  --shadow-hard-sm: 3px 3px 0 var(--color-ink);
+  --shadow-hard-lg: 7px 7px 0 var(--color-ink);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  background-color: var(--color-bg);
+  background-image: radial-gradient(
+    rgba(21, 21, 21, 0.07) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 26px 26px;
+}
+
+/* --- tombol: border tebal + hard shadow (DESIGN.md 6.1) --- */
+#ecgames-root .btn {
+  border: 3px solid var(--color-ink);
+  box-shadow: var(--shadow-hard-sm);
+}
+#ecgames-root .btn.small {
+  border-width: 2px;
+}
+#ecgames-root .btn.primary {
+  background: var(--color-yellow);
+  color: var(--color-ink);
+}
+#ecgames-root .btn.secondary {
+  background: var(--color-blue);
+  color: var(--color-ink);
+}
+#ecgames-root .btn.ghost {
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+#ecgames-root .btn.big {
+  font-size: 17px;
+  padding: 14px 22px;
+  border-radius: 16px;
+}
+#ecgames-root .btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 var(--color-ink);
+}
+#ecgames-root .btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-hard);
+}
+
+/* --- kontras teks di permukaan berwarna --- */
+#ecgames-root .qtype {
+  color: var(--color-ink);
+}
+#ecgames-root .duel-opts button.right {
+  background: var(--color-green);
+  color: var(--color-ink);
+}
+#ecgames-root .duel-opts button.wrong {
+  background: var(--color-coral);
+  color: var(--color-ink);
+}
+#ecgames-root .look-progress.all {
+  color: var(--color-ink);
+}
+#ecgames-root .duel-opts button.picked {
+  color: var(--color-ink);
+}
+
+/* --- ganti soft-shadow lama dengan hard shadow --- */
+#ecgames-root .ec-title span {
+  border: 3px solid var(--color-ink);
+  box-shadow: var(--shadow-hard-sm);
+}
+#ecgames-root .look-progress {
+  border: 2px solid var(--color-ink);
+  box-shadow: var(--shadow-hard-sm);
+}
+#ecgames-root .room-code b {
+  border: 3px solid var(--color-ink);
+  box-shadow: var(--shadow-hard-sm);
+}
+#ecgames-root .logo .logo-tag {
+  border: 3px solid var(--color-ink);
+  box-shadow: var(--shadow-hard-sm);
+}
+#ecgames-root .ec-badge {
+  border: 2px solid var(--color-ink);
+}
+
+/* --- wardrobe: stage hangat + state sel konsisten --- */
+#ecgames-root .look-stage {
+  background: var(--color-surface-muted);
+  border: 3px solid var(--color-ink);
+}
+#ecgames-root .look-stage::after {
+  background: #e3d6c6;
+  border-top: 2px solid var(--color-ink);
+}
+#ecgames-root .look-tabs button {
+  border-width: 2px;
+}
+#ecgames-root .look-tabs button.active {
+  background: var(--accent, var(--color-yellow));
+  border-color: var(--color-ink);
+}
+#ecgames-root .chip {
+  border-width: 2px;
+}
+#ecgames-root .chip.swatch.sel {
+  box-shadow:
+    var(--shadow-hard-sm),
+    inset 0 0 0 3px var(--color-ink);
+}
+#ecgames-root .chip:not(.swatch).sel {
+  border-color: var(--color-ink);
+  box-shadow: var(--shadow-hard-sm);
+}
+#ecgames-root .chip.swatch .tick {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 900;
+  text-shadow: none;
+}
+#ecgames-root .chip.locked {
+  border: 2px dashed var(--line-strong);
+}
+/* --- lobby: gaya "console / game store" --- */
+#ecgames-root .ec-lobby {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: stretch;
+}
+
+/* dekorasi latar: bentuk besar terpotong tepi layar (komposisi, bukan taburan) */
+#ecgames-root .ec-deco {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+#ecgames-root .ec-deco span {
+  position: absolute;
+}
+#ecgames-root .dco-a {
+  display: none;
+  background: var(--color-yellow);
+  border: 3px solid var(--color-ink);
+  border-radius: 44px;
+}
+#ecgames-root .dco-b {
+  background: var(--color-pink);
+  border: 3px solid var(--color-ink);
+  border-radius: 50%;
+  top: 38%;
+  left: -170px;
+  width: 200px;
+  height: 200px;
+}
+#ecgames-root .dco-c {
+  background: var(--color-blue);
+  border: 3px solid var(--color-ink);
+  border-radius: 50%;
+  top: 66%;
+  right: -170px;
+  width: 200px;
+  height: 200px;
+}
+#ecgames-root .dco-d {
+  background: var(--color-teal);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  bottom: 70px;
+  left: -160px;
+  width: 190px;
+  height: 160px;
+}
+@media (min-width: 1100px) {
+  #ecgames-root .dco-a {
+    display: block;
+    top: -190px;
+    right: -150px;
+    width: 360px;
+    height: 360px;
+    transform: rotate(15deg);
+  }
+  #ecgames-root .dco-b {
+    top: 36%;
+    left: -215px;
+    width: 330px;
+    height: 330px;
+  }
+  #ecgames-root .dco-c {
+    top: 66%;
+    right: -205px;
+    width: 320px;
+    height: 320px;
+  }
+  #ecgames-root .dco-d {
+    bottom: -120px;
+    left: 40px;
+    width: 290px;
+    height: 250px;
+  }
+}
+
+/* lobby window + top bar (ref: lobby v7) */
+#ecgames-root .ec-screen {
+  width: 100%;
+  background: var(--color-surface);
+  border: 3px solid var(--color-ink);
+  border-radius: 26px;
+  box-shadow: var(--shadow-hard);
+  padding: 22px 26px 32px;
+}
+#ecgames-root .ec-topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+#ecgames-root .ec-topbar-left {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+}
+#ecgames-root .ec-topbar-logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+#ecgames-root .ec-topbar-right {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  min-width: 0;
+}
+#ecgames-root .ec-tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+}
+#ecgames-root .ec-tab {
+  position: relative;
+  border: 0;
+  background: transparent;
+  color: var(--color-muted);
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 800;
+  padding: 6px 2px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 120ms ease;
+}
+#ecgames-root .ec-tab:hover {
+  color: var(--color-ink);
+}
+#ecgames-root .ec-tab:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+#ecgames-root .ec-tab.active {
+  color: var(--color-ink);
+}
+#ecgames-root .ec-tab.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-yellow);
+  transform: translateX(-50%);
+}
+#ecgames-root .ec-view {
+  min-width: 0;
+}
+#ecgames-root .ec-pick-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+}
+#ecgames-root .ec-pick-cta .btn::after {
+  content: " \2192";
+}
+#ecgames-root .ec-setup-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 16px;
+}
+#ecgames-root .ec-setup-head h2 {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+}
+@media (max-width: 700px) {
+  #ecgames-root .ec-screen {
+    padding: 16px 16px 22px;
+    border-radius: 22px;
+  }
+  #ecgames-root .ec-topbar {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin-bottom: 20px;
+  }
+  #ecgames-root .ec-topbar-left {
+    flex: 1 1 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  #ecgames-root .ec-topbar-logo {
+    display: none;
+  }
+  #ecgames-root .ec-topbar-right {
+    flex: 1 1 100%;
+    justify-content: space-between;
+  }
+  #ecgames-root .ec-user-meta b {
+    max-width: 96px;
+  }
+  #ecgames-root .ec-pick-cta {
+    margin-top: 22px;
+  }
+  #ecgames-root .ec-pick-cta .btn {
+    width: 100%;
+  }
+  #ecgames-root .ec-setup-head {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* top bar console */
+#ecgames-root .ec-console {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #eb4177;
+  color: #fff;
+  border: 3px solid var(--color-ink);
+  border-radius: 16px;
+  box-shadow: var(--shadow-hard-sm);
+  padding: 10px 14px;
+}
+#ecgames-root .ec-console-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+#ecgames-root .ec-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-pill);
+  padding: 5px 12px;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background 120ms ease,
+    color 120ms ease;
+}
+#ecgames-root .ec-back:hover {
+  background: var(--color-yellow);
+  color: var(--color-ink);
+}
+#ecgames-root .ec-back:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+#ecgames-root .room-top-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+#ecgames-root .ec-console-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+#ecgames-root .ec-console-ico {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  border: 2px solid var(--color-ink);
+  border-radius: 10px;
+  overflow: hidden;
+}
+#ecgames-root .ec-console-ico img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#ecgames-root .ec-console-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#ecgames-root .ec-poin-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+  font-size: 12.5px;
+  font-weight: 800;
+}
+#ecgames-root .ec-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-pill);
+  padding: 3px 12px 3px 4px;
+}
+#ecgames-root .ec-user-av {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 900;
+  overflow: hidden;
+  flex: 0 0 30px;
+}
+#ecgames-root .ec-user-av img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#ecgames-root .ec-user-meta {
+  display: grid;
+  line-height: 1.15;
+}
+#ecgames-root .ec-user-meta b {
+  font-size: 12.5px;
+  font-weight: 900;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#ecgames-root .ec-user-meta small {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--color-muted);
+}
+
+/* hero terpusat */
+#ecgames-root .ec-hero {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 0;
+}
+#ecgames-root .ec-title {
+  font-size: clamp(40px, 5.5vw, 60px);
+  line-height: 1.02;
+  letter-spacing: -1.5px;
+}
+#ecgames-root .ec-tag {
+  font-size: 15.5px;
+  max-width: 56ch;
+  margin-top: 14px;
+}
+#ecgames-root .ec-hero .hint {
+  margin-top: 12px;
+}
+
+/* kartu mode bergaya game card */
+#ecgames-root .ec-modes-label {
+  margin-top: 4px;
+  text-align: center;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+#ecgames-root .ec-modes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 16px 10px 8px;
+}
+#ecgames-root .ec-modes button {
+  position: relative;
+  width: min(250px, 31%);
+  min-height: 238px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 46px 18px 22px;
+  border: 3px solid var(--color-ink);
+  border-radius: 20px;
+  background: var(--mp-accent, var(--color-yellow));
+  box-shadow: var(--shadow-hard);
+  font: inherit;
+  color: var(--color-ink);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease;
+}
+#ecgames-root .ec-modes button + button {
+  margin-left: -16px;
+}
+#ecgames-root .ec-modes button:nth-child(1) {
+  --mp-accent: var(--color-blue);
+  transform: rotate(-4deg) translateY(12px);
+}
+#ecgames-root .ec-modes button:nth-child(2) {
+  --mp-accent: var(--color-pink);
+  transform: translateY(-6px);
+  z-index: 2;
+}
+#ecgames-root .ec-modes button:nth-child(3) {
+  --mp-accent: var(--color-green);
+  transform: rotate(4deg) translateY(12px);
+}
+#ecgames-root .ec-modes button:hover,
+#ecgames-root .ec-modes button:focus-visible {
+  transform: translateY(-12px) rotate(0deg);
+  z-index: 5;
+  box-shadow: var(--shadow-hard-lg);
+}
+#ecgames-root .ec-modes button:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 4px;
+}
+#ecgames-root .ec-modes button .mc-chip {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: var(--color-surface);
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-pill);
+  padding: 2px 10px;
+  font-size: 10.5px;
+  font-weight: 800;
+  transform: rotate(-2deg);
+}
+#ecgames-root .ec-modes button .mc-name {
+  max-width: 58%;
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: -0.4px;
+  line-height: 1.12;
+}
+#ecgames-root .ec-modes button small {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-ink);
+  line-height: 1.35;
+}
+#ecgames-root .ec-modes button .mc-art {
+  position: absolute;
+  left: 16px;
+  bottom: -30px;
+  font-size: 96px;
+  line-height: 1;
+  pointer-events: none;
+}
+#ecgames-root .ec-modes button:nth-child(2) .mc-art {
+  left: 50%;
+  bottom: -8px;
+  font-size: 84px;
+  transform: translateX(-62%);
+}
+#ecgames-root .ec-modes button:nth-child(3) .mc-art {
+  left: auto;
+  right: 22px;
+  bottom: -4px;
+  font-size: 88px;
+  transform: rotate(-8deg);
+}
+#ecgames-root .ec-modes button.sel {
+  box-shadow:
+    0 0 0 3px var(--color-yellow),
+    var(--shadow-hard);
+}
+
+/* setup: karakter + aturan + mulai */
+#ecgames-root .ec-setup {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+#ecgames-root .ec-side {
+  display: grid;
+  gap: 18px;
+}
+#ecgames-root .ec-panel {
+  background: var(--color-surface);
+  border: 3px solid var(--color-ink);
+  border-radius: 20px;
+  box-shadow: var(--shadow-hard);
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+#ecgames-root .ec-panel > *,
+#ecgames-root .ec-side > *,
+#ecgames-root .ec-setup > * {
+  min-width: 0;
+}
+#ecgames-root .ec-block-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#ecgames-root .ec-block-head h2 {
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+}
+#ecgames-root .ec-num {
+  display: grid;
+  place-items: center;
+  flex: 0 0 28px;
+  width: 28px;
+  height: 28px;
+  background: var(--color-yellow);
+  border: 2px solid var(--color-ink);
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+/* --- aturan ZEP: toggle pill --- */
+#ecgames-root .rules-pick {
+  gap: 10px;
+}
+#ecgames-root .rules-pick button {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 12px 34px 12px 12px;
+  border: 3px solid var(--color-ink);
+  border-radius: 14px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-hard-sm);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+}
+#ecgames-root .rules-pick .rp-name {
+  font-size: 14px;
+  font-weight: 900;
+}
+#ecgames-root .rules-pick button small {
+  font-weight: 600;
+  color: var(--color-muted);
+}
+#ecgames-root .rules-pick button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-hard);
+}
+#ecgames-root .rules-pick button:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+#ecgames-root .rules-pick button.sel {
+  background: var(--color-teal);
+  border-color: var(--color-ink);
+  box-shadow: var(--shadow-hard);
+}
+#ecgames-root .rules-pick button.sel small {
+  color: var(--color-ink);
+}
+#ecgames-root .rules-pick button.sel::after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  background: var(--color-ink);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* --- join kode room --- */
+#ecgames-root .join-box {
+  display: grid;
+  gap: 8px;
+  background: var(--color-surface-muted);
+  border: 3px solid var(--color-ink);
+  border-radius: 16px;
+  box-shadow: var(--shadow-hard-sm);
+  padding: 14px;
+}
+#ecgames-root .join-label {
+  font-size: 13px;
+  font-weight: 800;
+}
+#ecgames-root .join-box .join-row {
+  margin-top: 0;
+}
+
+/* --- hint cara main --- */
+#ecgames-root .hint.how {
+  background: var(--color-surface-muted);
+  border: 3px solid var(--color-ink);
+  border-radius: 16px;
+  box-shadow: var(--shadow-hard-sm);
+  margin-top: 0;
+  padding: 12px 14px;
+  font-size: 13px;
+}
+
+/* --- ruang tunggu: ritme vertikal rapi --- */
+#ecgames-root .room-card {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+}
+#ecgames-root .room-top > div {
+  display: grid;
+  gap: 6px;
+}
+#ecgames-root .room-card h3 {
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+#ecgames-root .room-card .player-list {
+  margin: 0;
+}
+#ecgames-root .room-actions {
+  margin-top: 0;
+}
+#ecgames-root .room-card > .hint {
+  margin-top: 0;
+}
+
+/* --- pemilih mode/aturan versi kecil (kontrol host di ruang tunggu) --- */
+#ecgames-root .mode-pick {
+  display: flex;
+  gap: 10px;
+}
+#ecgames-root .mode-pick button {
+  flex: 1;
+  min-height: 38px;
+  border: 3px solid var(--color-ink);
+  background: var(--color-surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow-hard-sm);
+  padding: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.3;
+  cursor: pointer;
+}
+#ecgames-root .mode-pick button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-hard);
+}
+#ecgames-root .mode-pick button.sel {
+  background: var(--color-yellow);
+  box-shadow: var(--shadow-hard);
+}
+#ecgames-root #host-mode-pick {
+  margin-top: 8px;
+}
+#ecgames-root .rules-pick.small button {
+  padding: 8px 30px 8px 10px;
+  font-size: 12.5px;
+}
+#ecgames-root .rules-pick.off {
+  opacity: 0.55;
+}
+#ecgames-root .rules-pick.off button {
+  pointer-events: none;
+  filter: grayscale(0.35);
+}
+#ecgames-root #host-rules-pick {
+  margin-top: 8px;
+}
+#ecgames-root #room-mode-label {
+  margin-top: 2px;
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  #ecgames-root .ec-setup {
+    grid-template-columns: 1fr;
+  }
+  #ecgames-root .ec-modes button {
+    width: min(226px, 32%);
+    min-height: 228px;
+    padding: 44px 14px 20px;
+  }
+  #ecgames-root .ec-modes button .mc-art {
+    font-size: 82px;
+  }
+  #ecgames-root .ec-modes button:nth-child(2) .mc-art {
+    font-size: 76px;
+  }
+  #ecgames-root .ec-modes button:nth-child(3) .mc-art {
+    font-size: 78px;
+  }
+}
+@media (max-width: 640px) {
+  #ecgames-root .ec-console {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  #ecgames-root .ec-console-right {
+    justify-content: space-between;
+  }
+  #ecgames-root .ec-modes {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 12px 0 6px;
+  }
+  #ecgames-root .ec-modes button {
+    width: 100%;
+    min-height: 0;
+    padding: 14px 96px 14px 16px;
+    text-align: left;
+  }
+  #ecgames-root .ec-modes button + button {
+    margin-left: 0;
+  }
+  #ecgames-root .ec-modes button:nth-child(1),
+  #ecgames-root .ec-modes button:nth-child(2),
+  #ecgames-root .ec-modes button:nth-child(3) {
+    transform: none;
+  }
+  #ecgames-root .ec-modes button:hover,
+  #ecgames-root .ec-modes button:focus-visible {
+    transform: none;
+  }
+  #ecgames-root .ec-modes button .mc-chip {
+    position: static;
+    align-self: flex-start;
+    margin-top: 2px;
+    transform: none;
+  }
+  #ecgames-root .ec-modes button .mc-name {
+    max-width: 100%;
+    font-size: 19px;
+  }
+  #ecgames-root .ec-modes button small {
+    max-width: 74%;
+  }
+  #ecgames-root .ec-modes button .mc-art {
+    left: auto;
+    right: 8px;
+    bottom: -2px;
+    font-size: 78px;
+    transform: none;
+  }
+  #ecgames-root .ec-modes button:nth-child(2) .mc-art {
+    right: 14px;
+    bottom: 0;
+    font-size: 82px;
+    transform: none;
+  }
+  #ecgames-root .ec-modes button:nth-child(3) .mc-art {
+    right: 12px;
+    bottom: -2px;
+    font-size: 74px;
+    transform: rotate(-6deg);
+  }
+  #ecgames-root .rules-pick {
+    flex-direction: column;
+  }
+  #ecgames-root .rules-pick button {
+    flex: none;
+  }
+  #ecgames-root .btn-row {
+    flex-direction: column;
+  }
+  #ecgames-root .ec-panel {
+    padding: 14px;
+  }
+}

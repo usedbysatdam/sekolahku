@@ -1,7 +1,12 @@
 window.APP_CONFIG = {
-  supabaseUrl: "https://ljthooujdxcfxiamrufu.supabase.co",
-  supabaseAnonKey:
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxqdGhvb3VqZHhjZnhpYW1ydWZ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE2MjUyOTgsImV4cCI6MjEwNzIwMTI5OH0.SuEFqWOznfA2ixf4_HkQXp4KgEg7ztfzmPfrnihreWs",
+  // MODE DEMO AKTIF: kunci Supabase dikosongkan agar aplikasi memakai data demo (localStorage).
+  // Untuk kembali ke mode Supabase asli, isi lagi dua nilai di bawah (lihat komentar).
+  supabaseUrl: "",
+  supabaseAnonKey: "",
+  // Nilai asli:
+  // supabaseUrl: "https://ljthooujdxcfxiamrufu.supabase.co",
+  // supabaseAnonKey:
+  //   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxqdGhvb3VqZHhjZnhpYW1ydWZ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE2MjUyOTgsImV4cCI6MjEwNzIwMTI5OH0.SuEFqWOznfA2ixf4_HkQXp4KgEg7ztfzmPfrnihreWs",
   schoolName: "SekolahKu",
   schoolSubtitle: "Sistem Manajemen Sekolah",
   firebase: {
